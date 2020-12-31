@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/league.css" id="theme">
+	<link rel="stylesheet" href="../reveal.js/css/style.css">
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-transition="concave">
+				<h1 class="logo" style="color:goldenrod;">Blockchain</h1>
+			</section>
+			<section data-transition="concave"
+				style="color:goldenrod; display: flex; flex-direction: column; height: 100vh; justify-content: center;">
+				<p style="margin: 0; text-align: justify; font-size: 38px;">
+					А blockchain, originally block chain, is a growing list of records, called blocks,
+					that are linked using cryptography. Each block contains a cryptographic hash of the previous block,
+					a timestamp,
+					and transaction data (generally represented as a Merkle tree).
+				</p>
+				<img src="../reveal.js/assets/Bitcoin_Block_Data.svg" alt="Merkle tree" style="margin: 0 auto;">
+			</section>
+			<section data-transition="concave">
+				<section data-transition="concave" style="color: goldenrod; position: relative; text-align: unset;">
+					<h2 style="color: goldenrod;">basic principles</h2>
+					<ul style="margin: 0; position: absolute; left: 65%; top: 25%; max-width: 350px;">A blockchain is a
+						<li class="fragment" style="color: chartreuse;">decentralized</li>
+						<li class="fragment" style="color: crimson;">distributed</li>
+						<li class="fragment" style="color:cyan;">oftentimes public</li>
+						<p class="fragment" style="color: mediumorchid; margin: 0;">digital ledger.</p>
+					</ul>
+					<img src="../reveal.js/assets/blockchain.svg" alt="blockchain"
+						style="margin: 0; position: relative; left: -40%; top: 0; max-width: 500px">
+				</section>
+				<section data-transition="concave">
+					<p style="color: goldenrod;">Blockchain security methods include the use of public-key cryptography.
+					</p>
+					<img src="../reveal.js/assets/private-key-encryption.png" alt="private-key-encryption">
+				</section>
+				<section data-transition="concave">
+					<p style="color: goldenrod;">Proof-of-work vs Proof-of-stake</p>
+					<img src="../reveal.js/assets/proof-of-work-vs-proof-of-stake-3.jpg"
+						alt="proof-of-work-vs-proof-of-stake" style="width: 590px;">
+				</section>
+			</section>
+			<section data-transition="concave">
+				<section data-transition="concave">
+					<h2 style="color: goldenrod;">Structure</h2>
+					<h3 style="color: gold;">Blockchain database</h3>
+					<img src="../reveal.js/assets/C-2019-1-Revet-01-groot.png" alt="Blockchain database">
+				</section>
+				<section data-transition="concave">
+					<h3 style="color: gold;">Block</h3>
+					<div style="display: flex; flex-direction: row; column-gap: 20px;">
+						<div class="r-frame" style="width: 25%; font-size: 30px; color: deepskyblue;">Block 0<br>
+							Genesis Block
+							<div class="r-frame"
+								style="width: 150px; font-size: 20px; color: goldenrod; background-color: deepskyblue; margin: 10px auto;">
+								Index</div>
+							<div class="r-frame"
+								style="width: 150px; font-size: 20px; color: goldenrod; background-color: deepskyblue; margin: 10px auto;">
+								Timestamp</div>
+							<div class="r-frame"
+								style="width: 150px; font-size: 20px; color: goldenrod; background-color: deepskyblue; margin: 10px auto;">
+								Previous Hash</div>
+							<div class="r-frame"
+								style="width: 150px; font-size: 20px; color: goldenrod; background-color: deepskyblue; margin: 10px auto;">
+								Hash</div>
+							<div class="r-frame"
+								style="width: 150px; font-size: 20px; color: goldenrod; background-color: deepskyblue; margin: 10px auto;">
+								Data</div>
+						</div>
+						<div class="r-frame" style="width: 25%; font-size: 30px; color: fuchsia;">Block1
+							<div class="r-frame"
+								style="width: 150px; font-size: 20px; color: goldenrod; background-color: deepskyblue; margin: 50px auto 0;">
+								Index</div>
+							<div class="r-frame"
+								style="width: 150px; font-size: 20px; color: goldenrod; background-color: deepskyblue; margin: 10px auto;">
+								Timestamp</div>
+							<div class="r-frame"
+								style="width: 150px; font-size: 20px; color: goldenrod; background-color: deepskyblue; margin: 10px auto;">
+								Previous Hash</div>
+							<div class="r-frame"
+								style="width: 150px; font-size: 20px; color: goldenrod; background-color: deepskyblue; margin: 10px auto;">
+								Hash</div>
+							<div class="r-frame"
+								style="width: 150px; font-size: 20px; color: goldenrod; background-color: deepskyblue; margin: 10px auto;">
+								Data</div>
+						</div>
+						<div class="r-frame" style="width: 25%; font-size: 30px; color: greenyellow;">Block2
+							<div class="r-frame"
+								style="width: 150px; font-size: 20px; color: goldenrod; background-color: deepskyblue; margin: 50px auto 0;">
+								Index</div>
+							<div class="r-frame"
+								style="width: 150px; font-size: 20px; color: goldenrod; background-color: deepskyblue; margin: 10px auto;">
+								Timestamp</div>
+							<div class="r-frame"
+								style="width: 150px; font-size: 20px; color: goldenrod; background-color: deepskyblue; margin: 10px auto;">
+								Previous Hash</div>
+							<div class="r-frame"
+								style="width: 150px; font-size: 20px; color: goldenrod; background-color: deepskyblue; margin: 10px auto;">
+								Hash</div>
+							<div class="r-frame"
+								style="width: 150px; font-size: 20px; color: goldenrod; background-color: deepskyblue; margin: 10px auto;">
+								Data</div>
+						</div>
+						<div class="r-frame" style="width: 25%; font-size: 30px; color: orangered;">Block3
+							<div class="r-frame"
+								style="width: 150px; font-size: 20px; color: goldenrod; background-color: deepskyblue; margin: 50px auto 0;">
+								Index</div>
+							<div class="r-frame"
+								style="width: 150px; font-size: 20px; color: goldenrod; background-color: deepskyblue; margin: 10px auto;">
+								Timestamp</div>
+							<div class="r-frame"
+								style="width: 150px; font-size: 20px; color: goldenrod; background-color: deepskyblue; margin: 10px auto;">
+								Previous Hash</div>
+							<div class="r-frame"
+								style="width: 150px; font-size: 20px; color: goldenrod; background-color: deepskyblue; margin: 10px auto;">
+								Hash</div>
+							<div class="r-frame"
+								style="width: 150px; font-size: 20px; color: goldenrod; background-color: deepskyblue; margin: 10px auto;">
+								Data</div>
+						</div>
+					</div>
+				</section>
+				<section data-transition="concave">
+					<h3 style="color: gold; ">Block time</h3>
+					<div style="display: flex; flex-direction: row;">
+						<img src="../reveal.js/assets/cryptocurrency_pixel_perfect_icons_20-time-512.png"
+							alt="blockchain.png" style="height:400px;">
+						<p style="text-align: justify; font-size: 30px; color: burlywood;"> The block time is the
+							average time it takes for the network to generate one extra block in the blockchain.
+							Some blockchains create a new block as frequently as every five seconds. By the time of
+							block completion,
+							the included data becomes verifiable. In cryptocurrency, this is practically when the
+							transaction takes place,
+							so a shorter block time means faster transactions. The block time for Ethereum is set to
+							between 14 and 15 seconds,
+							while for bitcoin it is on average 10 minutes.
+						</p>
+					</div>
+				</section>
+				<section data-transition="concave">
+					<h3 style="color: gold;">Fork</h3>
+					<div style="display: flex; flex-direction:row;">
+						<img src="../reveal.js/assets/branching-fork-cryptocurrency-project-branch-512.webp" alt="fork">
+						<p style="color: goldenrod; text-align: justify; align-self: center;">Sometimes separate blocks
+							can be produced concurrently, creating a temporary fork. </p>
+					</div>
+				</section>
+			</section>
+			<section data-transition="concave">
+				<h2 style="color: goldenrod;">
+					Uses
+				</h2>
+				<section data-transition="concave">
+					<h4 style="color: gold; margin-top: 50px;">Cryptocurrencies</h4>
+					<img src="../reveal.js/assets/blockchain-assets-icons-top-100/SVG/BTC.svg" alt="BTC">
+					<img src="../reveal.js/assets/blockchain-assets-icons-top-100/SVG/ETH.svg" alt="ETH">
+					<img src="../reveal.js/assets/blockchain-assets-icons-top-100/SVG/XRP.svg" alt="XRP">
+					<img src="../reveal.js/assets/blockchain-assets-icons-top-100/SVG/XMR.svg" alt="XMR">
+					<img src="../reveal.js/assets/blockchain-assets-icons-top-100/SVG/ZEC.svg" alt="ZEC">
+					<img src="../reveal.js/assets/blockchain-assets-icons-top-100/SVG/USDT.svg" alt="USDT">
+					<img src="../reveal.js/assets/blockchain-assets-icons-top-100/SVG/LTC.svg" alt="LTC">
+					<img src="../reveal.js/assets/blockchain-assets-icons-top-100/SVG/BCH.svg" alt="BCH">
+				</section>
+				<section data-transition="concave">
+					<h4 style="color: gold; margin-top: 50px;">Smart contracts</h4>
+					<img src="../reveal.js/assets/bg-smart-contact-development.svg" alt="Smart contract">
+				</section>
+				<section data-transition="concave">
+					<h4 style="color: gold; margin-top: 50px;">Financial services</h4>
+					<img src="../reveal.js/assets/28-512.webp" alt="Smart contract" style="width: 400px;">
+				</section>
+				<section data-transition="concave">
+					<h4 style="color: gold;">Mining</h4>
+					<img src="../reveal.js/assets/gems-gem-svgrepo-com.svg" alt="gems" style="width: 350px;">
+				</section>
+				<section data-transition="concave">
+					<h4 style="color: gold;">Food supply</h4>
+					<img src="../reveal.js/assets/turkey.svg" alt="turkey" style="width: 350px;">
+				</section>
+				<section data-transition="concave">
+					<h4 style="color: gold;">Health care</h4>
+					<img src="../reveal.js/assets/health-care-diet-svgrepo-com.svg" alt="health-care"
+						style="width: 350px;">
+				</section>
+				<section data-transition="concave">
+					<h4 style="color: gold;">Domain Names</h4>
+					<img src="../reveal.js/assets/tld_cloud.svg" alt="domain" style="width: 950px;">
+				</section>
+			</section>
+			<section data-transition="concave">
+				<h4 style="color: goldenrod;">Conclusions</h4>
+				<p style="font-size: 28px;color: goldenrod; text-align: justify;">
+					Thus, Blockchain is a new highlysecured, decentralized, distributed, public tecknology,
+					which is integrating at more and more spheres of life making them simplier, cheaper, faster, safer.
+					I think in near future majority of our population will become familiar to it as it was with web.
+				</p>
+				<img src="../reveal.js/assets/1833f50f739dc5a9138144e3a8582605.svg" alt="" style="width: 550px;">
+			</section>
+			<section>
+				<h2 class="autochange">
+					Thanks for wathching
+				</h2>
+				<!-- <section data-transition="zoom" data-auto-animate data-autoslide="3000">
+					<h2 style="color: goldenrod;">
+						<span>T</span><span>h</span><span>a</span><span>n</span><span>k</span><span>s</span>
+						<span>f</span><span>o</span><span>r</span>
+						<span>w</span><span>a</span><span>t</span><span>c</span><span>h</span><span>i</span><span>n</span><span>g</span>
+					</h2>
+				</section> -->
+				<!-- <section>
+					<h2>
+						<span style="color: red;">T</span><span style="color: greenyellow;">h</span><span
+							style="color: dodgerblue;">a</span><span style="color: yellow;">n</span><span
+							style="color: red;">k</span><span style="color: greenyellow;">s</span>
+						<span style="color: dodgerblue;">f</span><span style="color: yellow;">o</span><span
+							style="color: red;">r</span>
+						<span style="color: greenyellow;">w</span><span style="color: dodgerblue;">a</span><span
+							style="color: yellow;">t</span><span style="color: red;">c</span><span
+							style="color: greenyellow;">h</span><span style="color: dodgerblue;">i</span><span
+							style="color: yellow;">n</span><span style="color: red;">g</span>
+					</h2>
+				</section>
+				<section>
+					<h2>
+						<span style="color: yellow;">T</span><span style="color: red;">h</span><span
+							style="color: greenyellow;">a</span><span style="color: dodgerblue;">n</span><span
+							style="color: yellow;">k</span><span style="color: red;">s</span>
+						<span style="color: greenyellow;">f</span><span style="color: dodgerblue;">o</span><span
+							style="color: yellow;">r</span>
+						<span style="color: red;">w</span><span style="color: greenyellow;">a</span><span
+							style="color: dodgerblue;">t</span><span style="color: yellow;">c</span><span
+							style="color: red;">h</span><span style="color: greenyellow;">i</span><span
+							style="color: dodgerblue;">n</span><span style="color: yellow;">g</span>
+					</h2>
+				</section>
+				<section>
+					<h2>
+						<span style="color: dodgerblue;">T</span><span style="color: yellow;">h</span><span
+							style="color: red;">a</span><span style="color: greenyellow;">n</span><span
+							style="color: dodgerblue;">k</span><span style="color: yellow;">s</span>
+						<span style="color: red;">f</span><span style="color: greenyellow;">o</span><span
+							style="color: dodgerblue;">r</span>
+						<span style="color: yellow;">w</span><span style="color: red;">a</span><span
+							style="color: greenyellow;">t</span><span style="color: dodgerblue;">c</span><span
+							style="color: yellow;">h</span><span style="color: red;">i</span><span
+							style="color: greenyellow;">n</span><span style="color: dodgerblue;">g</span>
+					</h2>
+				</section> -->
+			</section>
+		</div>
+	</div>
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+		
+	</script>
+</body>
+
+</html>

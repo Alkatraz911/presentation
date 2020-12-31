@@ -1,0 +1,51 @@
+.autochange {
+    -webkit-animation:colorchange 20s infinite alternate; 
+}
+
+.logo{
+    -webkit-animation:colorchange 20s infinite alternate; 
+}
+@-webkit-keyframes colorchange {
+    0% {
+      color: green;
+    }
+    
+    10% {
+      color: #1abc9c;;
+    }
+    
+    20% {
+      color: greenyellow;
+    }
+    
+    30% {
+        color: #f1c40f;
+    }
+    
+    40% {
+        color: yellow;
+    }
+    
+    50% {
+        color: #2980b9;
+    }
+    
+    60% {
+        color:dodgerblue;   
+    }
+    
+    70% {
+        color: #8e44ad;
+    }
+    80% {
+        color: tomato;  
+    }
+    
+    90% {
+      color: red;
+    }
+    
+    100% {
+        color:pink;
+    }
+}
